@@ -1,0 +1,22 @@
+{
+  "name": "exemplos-aula-backend-jp-2025",
+  "version": "1.0.0",
+  "description": "Exemplos das aulas de Backend do JP no ano de 2025 do SENAC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiviaMot/exemplos-aula-backend-jp-2025.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LiviaMot/exemplos-aula-backend-jp-2025/issues"
+  },
+  "homepage": "https://github.com/LiviaMot/exemplos-aula-backend-jp-2025#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

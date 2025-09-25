@@ -1,13 +1,19 @@
 import express from "express"
-import { exercicio1, exercicio2, exercicio3, exercicio4, exercicio5 } from "./services/exercicio.js"
+import {
+    exercicio1Get,
+    exercicio1Post,
+    exercicio2
+} from "./controllers/exercicios.js"
 
 const app = express()
-    
-// localhost:3000/exercicio1?num1=30&num2=45
-app.get('/exercicio1', exercicio1)
+app.use(express.json())
 
-// localhost:3000/exercicio2/10/2
-app.get('/exercicio2/:valorHoras/:qtdeHoras', exercicio2)
+// localhost:3000/exercicio1?num1=30&num2=45
+app.get('/exercicio1', exercicio1Get)
+app.post('/exercicio1', exercicio1Post)
+
+// localhost:3000/exercicio1/30/45
+app.get('/exercicio2/:valorHora/:qtdeHoras', exercicio2)
 
 // localhost:3000/exercicio3/5/5/5/5/5
 app.get('/exercicio3/:peso/:peso2/:peso3/:peso4/:peso5', exercicio3)

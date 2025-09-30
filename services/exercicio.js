@@ -1,6 +1,10 @@
 // +peso = operador unário; converte as strings em números (colocadas a frente do nome da variavel)
 export function somar(num1, num2) {
-  return +num1 + +num2;
+  const num1Inteiro = num1 * 100
+  const num2Inteiro = num2 * 100
+  const result = num1Inteiro + num2Inteiro
+
+  return result / 100;
 }
 
 export function salario(valorHora, qtdeHora) {
